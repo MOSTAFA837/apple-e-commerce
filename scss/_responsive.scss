@@ -1,0 +1,230 @@
+@media (max-width: 1500px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 1100px) {
+    html {
+        font-size: 40%;
+    }
+
+    .navbar-link {
+        font-weight: 700;
+    }
+
+    .header .banner {
+            h1 {
+                font-size: 8rem;
+            }
+
+            p {
+                font-size: 3rem;
+            }
+        }
+
+    .watch-btn {
+        right: 25%;
+    }
+}
+
+@media (max-width: 900px) {
+    .macbook .macbook__content {
+        width: 90%;
+        .loading-wrapper {
+            width: 70%;
+
+            .loading i {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    .airpods-section .airpods .airpods-heading {
+        font-size: 12rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .header 
+        .logo {
+            top: 0;
+            left: 2rem;
+
+            i {
+                font-size: 8rem;
+            }
+        }
+
+        .cube-wrapper {
+            opacity: .7;
+
+            .cube {
+                top: 3rem;
+            }
+
+            .controls {
+                display: none;
+            }
+        }
+
+        .banner {
+            position: absolute;
+    
+            h1 {
+                position: relative;
+                left: -5rem;
+    
+                &::first-letter {
+                    visibility: hidden;
+                    opacity: 0;
+                }
+            }
+    
+            button:hover {
+                clip-path: polygon(
+                    50% 0%,
+                    81% 5%,
+                    100% 0,
+                    100% 100%,
+                    80% 95%,
+                    50% 100%,
+                    20% 95%,
+                    0 100%,
+                    0 0,
+                    23% 5%
+                );
+            }
+        }
+
+    .iphone {
+        &__imgs {
+            height:70vh;
+            width: 70vw;
+            margin: 0 auto;
+        }
+    }
+
+    .watches-section .watches .watch-btn {
+        right: 15%;
+    }
+
+    .airpods-section .airpods {
+        .airpods-img-1 {
+            display: none;
+        }
+
+        .airpods-img-2 {
+            width: 100%;
+        }
+
+        .airpods-buttons .airpods-btn {
+            background-color: $whiteColor;
+            color: $primaryColor;
+            box-shadow: .1rem .1rem .1rem #ddd;
+        }
+    }
+
+    .footer .footer-icons .icon-link {
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        .navbar .navbar-link {
+            margin: 0 1.5rem;
+        }
+    }
+
+    .iphone {
+        &__heading {
+            font-size: 8rem;
+        }
+    }
+
+    .macbook {
+        .macbook__heading {
+            font-size: 8rem;
+        }
+
+        .info {
+            .info-heading {
+                font-size: 5rem;
+            }
+
+            .info-btn {
+                width: 15rem;
+                height: 3rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    
+    .airpods-section .airpods .airpods-buttons { 
+        width: 50rem;
+        text-align: center;
+    }
+
+    .footer .footer-icons .icon-link img{
+        width: 8rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 35%;
+    }
+
+    .header {
+        .logo {
+            top: 10rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navbar {
+            left: 50%;
+            transform: translateX(-50%);
+            width: max-content;
+        }
+
+        .banner p {
+            text-align: center;
+        }
+    }
+
+    .iphone .iphone__imgs {
+        width: 75vw;
+    }
+
+    .macbook {
+        &__heading {
+            font-size: 6rem;
+        }
+
+        &__content {
+            .info {
+                width: 40rem;
+
+                &-heading {
+                    font-size: 3rem;
+                }
+
+                &-price {
+                    font-size: 2rem;
+                    font-weight: 300;
+                }
+
+                &-btn {
+                    right: 5%;
+                }
+            }
+        }
+    }
+
+    .footer .footer-icons .icon-link img{
+        width: 6rem;
+    }
+}
